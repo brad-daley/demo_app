@@ -1,10 +1,5 @@
 DemoApp::Application.routes.draw do
-  get "users/new"
-
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
-  get "pages/help"
+  resources :users
 
   match '/signup',  :to => 'users#new'
 
